@@ -21,7 +21,7 @@ class ListaDeCategorias extends Component {
     }
 
     _handleEventInput(event) {
-        if (event.key == 'Enter') {
+        if (event.key === 'Enter') {
             let valorCategoria = event.target.value
             this.props.adicionarCategoria(valorCategoria)
         }
